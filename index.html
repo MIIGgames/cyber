@@ -1,65 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Titulo - Index.html -->
-    <title>CyberSafeCorp - Segurança online</title>
-
-    <!-- Estilo - CSS -->
-    <link rel="stylesheet" href="css/all.css">
-
-    <!-- Icons -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
-    <!-- Fonte Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Mukta:wght@300;800&family=Roboto:ital,wght@0,200;0,400;0,600;1,300&family=Roboto:ital,wght@0,300;0,900;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
-    <!-- Faicon -->
-    <link rel="shortcut icon" href="img/Logo-branca-cyber.png" type="image/x-icon">
-
+    <link rel="stylesheet" href="styles.css">
+    <title>Informações de Momento e Indentidadess</title>
 </head>
 <body>
-    <!-- =================== MENU ================== -->
-    <header id="header">
-        <nav class="nav">
-            <a href="index.html" class="logo">
-                <img src="img/LOGO-CYBER.webp" alt="">
-            </a>
+    <div class="preto">
 
-            <i class="ph-bold ph-list"></i>
+    </div>
+    <div class="frase">
+        <p>Secretaria Municipal da Fazenda (SF)</p>
+    </div>
+    <div class="titulo">
+        <h2>Impressão da 2ª Via Simplificada do IPTU</h2>
+        <p>Caso seja necessário emitir para exercícios anteriores a 2012, clique <a target="_blank" href="https://www3.prefeitura.sp.gov.br/iptusimp/iptu2via.html">AQUI</a></p>
+    </div>
+    <form id="formulario">
+        <label for="contribuinte">Número do Contribuinte:</label>
+        <input type="number" id="contribuinte" required><br>
 
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="servicos/index.html">Serviços</a></li>
-                <li><a target="_blank" href="https://curso.cybersafecorp.com.br/">Educação</a></li>
-                <li><a href="suporte/index.html">Suporte</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+        <label for="parcela">Parcela a ser impressa:</label>
+        <select id="parcela" required>
+            <option value="parcela1">Parcela 1</option>
+            <option value="parcela2">Parcela 2</option>
+            <option value="parcela2">Parcela 3</option>
+            <option value="parcela2">Parcela 4</option>
+            <option value="parcela2">Parcela 5</option>
+            <option value="parcela2">Parcela 6</option>
+            <option value="parcela2">Parcela 7</option>
+            <option value="parcela2">Parcela 8</option>
+            <option value="parcela2">Parcela 9</option>
+            <option value="parcela2">Parcela 10</option>
+            <!-- Adicione as opções de parcela 3 até 10 aqui -->
+            <option value="avista">À vista</option>
+        </select><br>
 
-    <!-- =================== BANNER ================== -->
-    <section class="banner">
-        <section class="banner">
-            <video autoplay muted loop id="video-background">
-                <source src="video/video-banner-1.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
+        <label for="ano">Ano de Exercício (AAAA):</label>
+        <input type="text" id="ano" required><br>
 
-            <div class="desc">
-                <div class="desc-h1-h2">
-                    <h1>C Y B E R S A F E C O R P</h1>
-                    <h2>CIBERSEGURANÇA PARA EMPRESAS E PESSOAS</h2>
-                    <div class="seta-1">
-                        <span class="seta-banner"></span>
-                        <span class="seta-banner"></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
+        <label for="codigoImagem">Código da imagem:</label>
+        <br>
+        <img src="captcha8.jpeg" alt="">
+        <br>
+        <input type="text" id="codigoImagem" required><br>
+
+        <button type="button" id="gerar2via">Gerar 2ª Via</button>
+    </form>
+
+    <p>Versão: 30.0.8467.24442 - 08/03/23 13:34</p>
+    <div class="preto">
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
