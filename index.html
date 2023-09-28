@@ -1,59 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Informações de Momento e Indentidadess</title>
+    <title>CyberSafeCorp - Segurança online</title>
+
+    <!-- ESTILO CSS -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- LINK ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Mukta:wght@300;800&family=Roboto:ital,wght@0,200;0,400;0,600;1,300&family=Roboto:ital,wght@0,300;0,900;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- FAICON -->
+    <link rel="shortcut icon" href="img/Logo-branca-cyber.png" type="image/x-icon">
 </head>
 <body>
-    <div class="preto">
+    <!-- =================== MENU ================== -->
+    <header id="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                <img src="img/LOGO-CYBER.webp" alt="">
+            </a>
 
+            <i class="ph-bold ph-list"></i>
+
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="servicos/index.html">Serviços</a></li>
+                <li><a target="_blank" href="https://curso.cybersafecorp.com.br/">Educação</a></li>
+                <li><a href="suporte/index.html">Suporte</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- =================== BANNER ================== -->
+    <section class="banner">
+        <section class="banner">
+            <video autoplay muted loop id="video-background">
+                <source src="video/video-banner-1.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+
+            <div class="desc">
+                <div class="desc-h1-h2">
+                    <h1>C Y B E R S A F E C O R P</h1>
+                    <h2>CIBERSEGURANÇA PARA EMPRESAS E PESSOAS</h2>
+                    <div class="seta-1">
+                        <span class="seta-banner"></span>
+                        <span class="seta-banner"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- =================== BANNER ================== -->
+    <main>
+        <!-- =================== Section-1 ================== -->
+        <section id="home" class="section-1">
+            <div class="sobre">
+                <h1>SOBRE A <span class="cinza">CYBER</span>SAFECORP</h1>
+                <h2>Segurança online</h2>
+                <p>A CyberSafeCorp é uma empresa líder em segurança cibernética, com uma equipe altamente qualificada e experiente em proteger os sistemas e dados de nossos clientes. Nós oferecemos uma ampla gama de serviços, incluindo testes de invasão, gerenciamento de vulnerabilidades, treinamento de segurança e consultoria em segurança cibernética. Nossa missão é ajudar nossos clientes a se sentirem seguros e protegidos online. Acreditamos que a segurança cibernética é crucial para o sucesso de qualquer empresa e estamos comprometidos em fornecer as melhores soluções de segurança para atender às necessidades de nossos clientes. Entre em contato conosco hoje para saber como podemos ajudá-lo a proteger sua empresa contra ameaças cibernéticas.</p>
+            </div>
+        </section>
+
+        <!-- =================== Section-2 ================== -->
+        <section class="section-2">
+            <div class="sem-nome">
+                <h1>SEGURANÇA CIBERNÉTICAS</h1>
+                <p>A CyberSafeCorp oferece o conjunto mais abrangente de portfólios de segurança do setor, abrangendo endpoint, rede, informações e segurança de e-mail, tanto para implantações locais quanto baseadas na nuvem.</p>
+
+                <div class="card">
+
+                    <div class="block">
+                        <img src="img/Seguranca-de-terminais.webp" alt="Imagem 1">
+                        <div class="desc-block">
+                            <h2>Segurança de terminais</h2>
+                            <p>Detecte, bloqueie e corrija ameaças emergentes em laptops, desktops, tablets, telefones celulares, servidores e cargas de trabalho na nuvem.</p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <img src="img/Seguranca-de-rede_1.webp" alt="Imagem 1">
+                        <div class="desc-block">
+                            <h2>Segurança de rede</h2>
+                            <p>Interrompa as ameaças baseadas na Web de entrada e saída que visam usuários finais, informações e infraestrutura principal.</p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <img src="img/Seguranca-da-informacao_1.webp" alt="Imagem 1">
+                        <div class="desc-block">
+                            <h2>Segurança da informação</h2>
+                            <p>​Proteja os dados confidenciais onde quer que estejam – em endpoints, serviços em nuvem, aplicativos privados e no local.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== Section-3 ================== -->
+        <section class="section-3">
+            <div class="container-3">
+                <div class="pentest">
+                    <div class="desc-pentest">
+                        <h1>PENTEST</h1>
+                        <p>Proteja seus dados de negócios, hardware e software utilizando uma abordagem de teste coordenada e cuidadosamente priorizada.</p>
+                        <ul>
+                            <li>Infrastructure testing</li>
+                            <li>Web application testing</li>
+                            <li>Red Teaming</li>
+                            <li>Outros testes de seguraça</li>
+                        </ul>
+                    </div>
+                    <img src="img/Pentest.webp" alt="">
+                </div>
+
+                <div class="continuos-penteste">
+                    <div class="pentest">
+                        <img src="img/Pentest-continuos.webp" alt="">
+                        <div class="desc-pentest">
+                            <h1>Continuous Security Testing</h1>
+                            <p>Embora o PenTest seja um método comprovado na descoberta de vulnerabilidades, ele é limitado a um curto intervalo de tempo. Os testes de segurança contínuos são realizados repetidamente para a descoberta de novas vulnerabilidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =================== Section-4 ================== -->
+        <section class="section-4">
+            <sectio class="div-4">
+                <div class="descricao-div-4">
+                    <h1>A experiência que a sua empresa precisa para manter seu negócio seguro e protegido</h1>
+                    <p>A cibersegurança é a proteção de sistemas, redes e dispositivos contra ameaças cibernéticas. É importante ter cibersegurança porque os ataques cibernéticos podem ter consequências graves, como roubo de dados pessoais, perda de informações confidenciais ou interrupção de serviços essenciais. A cibersegurança também é importante porque os ataques cibernéticos estão se tornando cada vez mais sofisticados e comuns, e qualquer pessoa ou empresa conectada à internet pode ser alvo. Ao investir em cibersegurança, os clientes podem proteger suas informações pessoais, manter a integridade de seus sistemas e garantir que sua empresa continue funcionando de maneira eficiente. Além disso, a cibersegurança também é importante porque pode ajudar a proteger a reputação de uma empresa e evitar perdas financeiras devido a ataques cibernéticos.</p>
+                    <div class="seta-1">
+                        <span class="seta"></span>
+                        <span class="seta"></span>
+                    </div>
+                </div>
+            </sectio>
+        </section>
+
+        <!-- =================== Section-5 ================== -->
+        <section class="section-5">
+            <div class="cards-section-5">
+                <div class="linha">
+                    <hr>
+                    <h1>Serviços e suporte</h1>
+                    <hr>
+                </div>
+                <div class="cards-link">
+                    <a href="servicos/index.html" class="bloco-section-5">
+                        <img src="img/img-servico-1.webp" alt="">
+                        <div class="desc-bloco-section-5">
+                            <h3>Serviços</h3>
+                            <p>Encontre ajuda para implementar seu produto, atualizar seu ambiente ou expandir sua implantação.</p>
+                        </div>
+                    </a>
+                    <a href="suporte/index.html" class="bloco-section-5">
+                        <img src="img/img-atendimento.webp" alt="">
+                        <div class="desc-bloco-section-5">
+                            <h3>Precisa de ajuda?</h3>
+                            <p>Acesse as notícias mais recentes sobre produtos, informações sobre o ciclo de vida do produto e informações de suporte.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="cards-link">
+                    <a href="treinamento/index.html" class="bloco-section-5">
+                        <img src="img/img-educacao.webp" alt="">
+                        <div class="desc-bloco-section-5">
+                            <h3>Educação</h3>
+                            <p>A CyberSafeCorp oferece soluções de treinamento para aprimorar habilidades técnicas, demonstrar competência e impulsionar a carreira.</p>
+                        </div>
+                    </a>
+                    <a href="404/index.html" class="bloco-section-5">
+                        <img src="img/img-conheca-mais.webp" alt="">
+                        <div class="desc-bloco-section-5">
+                            <h3>Conheça mais</h3>
+                            <p>Encontre respostas e compartilhe conhecimento com seus colegas por meio de fóruns interativos.</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- =================== Contato ================== -->
+        <section id="contato" class="contato-1">
+            <div id="contato" class="container-contato">
+                <div class="company-info">
+                    <div class="desc-contato">
+                        <h1><span>Cyber</span>SafeCorp</h1>
+                        <p>Consulte um profissional para você ou sua empresa!</p>
+                        <p>Telefone: +55 92 99336-8930</p>
+                        <p>E-mail: contato@cybersafecorp.com.br</p>
+                    
+                    <div style="display: flex; justify-content: left; gap: 1rem; margin-top: 25px;" class="redes">
+        
+                        <a target="_blank" href="https://www.instagram.com/cybersafecorp/">
+                           <i class="ph-bold ph-instagram-logo"></i>
+                        </a>
+                                
+                        <a target="_blank" href="https://twitter.com/cybersafecorp?t=7_AGQ0oXVTZo6p_z1FbUCA&s=08">
+                            <i class="ph-bold ph-twitter-logo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Entre em Contato</h2>
+                    <form action="https://formsubmit.co/contato@cybersafecorp.com.br" method="POST">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                        
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                        
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Digite sua mensagem aqui" required></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                    </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="cookie-message">
+        <p>Informamos que houve atualização nas Políticas de Privacidade do site, de acordo com a lei nº 13.709/2018 (Lei Geral de Proteção de Dados Pessoais - LGPD). Ao continuar navegando nele, entendemos que você está ciente e de acordo com elas.</p>
+        <button id="reject-cookies">Recusar</button>
+        <button id="accept-cookies">Aceitar</button>
     </div>
-    <div class="frase">
-        <p>Secretaria Municipal da Fazenda (SF)</p>
-    </div>
-    <div class="titulo">
-        <h2>Impressão da 2ª Via Simplificada do IPTU</h2>
-        <p>Caso seja necessário emitir para exercícios anteriores a 2012, clique <a target="_blank" href="https://www3.prefeitura.sp.gov.br/iptusimp/iptu2via.html">AQUI</a></p>
-    </div>
-    <form id="formulario">
-        <label for="contribuinte">Número do Contribuinte:</label>
-        <input type="number" id="contribuinte" required><br>
 
-        <label for="parcela">Parcela a ser impressa:</label>
-        <select id="parcela" required>
-            <option value="parcela1">Parcela 1</option>
-            <option value="parcela2">Parcela 2</option>
-            <option value="parcela2">Parcela 3</option>
-            <option value="parcela2">Parcela 4</option>
-            <option value="parcela2">Parcela 5</option>
-            <option value="parcela2">Parcela 6</option>
-            <option value="parcela2">Parcela 7</option>
-            <option value="parcela2">Parcela 8</option>
-            <option value="parcela2">Parcela 9</option>
-            <option value="parcela2">Parcela 10</option>
-            <!-- Adicione as opções de parcela 3 até 10 aqui -->
-            <option value="avista">À vista</option>
-        </select><br>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.link/1mcrub" style="position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;color:#FFF;
+    border-radius:50px;
+    text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+    z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
 
-        <label for="ano">Ano de Exercício (AAAA):</label>
-        <input type="text" id="ano" required><br>
-
-        <label for="codigoImagem">Código da imagem:</label>
-        <br>
-        <img src="captcha8.jpeg" alt="">
-        <br>
-        <input type="text" id="codigoImagem" required><br>
-
-        <button type="button" id="gerar2via">Gerar 2ª Via</button>
-    </form>
-
-    <p>Versão: 30.0.8467.24442 - 08/03/23 13:34</p>
-    <div class="preto">
-
-    </div>
-
-    <script src="script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/menu-ancora.js"></script>
 </body>
 </html>

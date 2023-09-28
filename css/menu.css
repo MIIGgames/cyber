@@ -1,0 +1,143 @@
+#header {
+    background: linear-gradient(to bottom, #0c0c0c, #00000000);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-left: 5rem;
+}
+
+.logo img {
+    width: 250px;
+    height: 90px;
+}
+
+ul.menu {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    margin-right: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid #fff;
+    transition: .1s;
+    transform: scale(1.010);
+}
+
+.ph-list {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.ph-x {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.menu.open {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    #header {
+        background: #000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }    
+
+    .logo {
+        margin-left: 1rem;
+    }    
+    .logo img {
+        width: 200px;
+        height: 80px;
+        margin-top: 10px;
+    }
+
+    ul.menu {
+        position: fixed;
+        top: 80px;
+        right: -300px;
+        background-color: #000;
+        height: 50vh;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        border-radius: 10px;
+
+        margin-right: 0rem;
+    }
+
+    .menu .open {
+        right: 0;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .menu li > a {
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .menu li > a:hover {
+        border-bottom: 2px solid #fff;
+        transition: .1s;
+        transform: scale(1.010);
+    }
+
+    .ph-list {
+        display: block;
+        color: #fff;
+        margin-right: 1rem;
+        font-size: 2rem;
+        z-index: 100;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 20px;
+    }
+}
